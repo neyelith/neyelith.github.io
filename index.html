@@ -1,14 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Neyelith - Homepage</title>
-    <link rel=" icon" type="image/x-icon" href="icon.png">
-    <link rel="stylesheet" href="app.css">
+    <link rel=" icon" type="image/x-icon" href="textures\\index\\icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
     <script src="mrlonglegsscript.js"></script>
-  </head>
-  <body style="background-color:rgb(240 240 240)">
-    <a href="https://neyelith.github.io/"><img src="bar.png" style="height:50px;top:15px"></a>
-    <p id="demo">A Paragraph</p>
-    <button type="button" onclick="myFunction()">Try it</button>
-  </body>
+</head>
+<body style="background-color:rgb(240 240 240)">
+    <a href="https://neyelith.github.io/"><img src="textures\\index\\bar.png" style="height:50px;top:15px"></a>
+    <button id="startbutton" onclick="Mrlonglegs()" style="height:50px;width:100px;top:15px">Start Mr.longlegs</button>
+    <script>
+        function Mrlonglegs() {
+            document.getElementById("startbutton").remove();
+            startGame();
+            setInterval(gameupdate, 16)
+        }
+    </script>
+</body>
 </html>
